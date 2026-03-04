@@ -19,10 +19,13 @@ print("Your list is: ", even_list)
 """
 YOUR CODE BEGINS BELOW HERE. FILL IN THE MISSING OPERATIONS / CODE
 """
-
+ListLenght = len(even_list)
+#With list being even cant get an exact middle like an odd list
+RightMiddle = ListLenght // 2
+LeftMiddle = RightMiddle - 1
 
 # this is the final result. Modify this line, and the empty lines above, to solve the assignment
-middle_average = None
+middle_average = (even_list[RightMiddle] + even_list[LeftMiddle])/2
 
 # the average of middle elements is
 print("The average is: ", middle_average)

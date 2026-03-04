@@ -19,7 +19,11 @@ def dot_product(a,b):
     """
 
     ### YOUR CODE HERE ###
-
+def dot_product(a,b):
+    total = 0
+    for i in range(len(a)):
+        total += a[i] * b[i]
+    return total
 
     ### CHANGE THIS RETURN VALUE. IT IS HERE SO THE CODE DOES NOT ERROR
     return None
